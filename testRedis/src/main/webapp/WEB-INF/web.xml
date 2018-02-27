@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web-app metadata-complete="true" version="2.5"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance http://www.springmodules.org/schema/cache/springmodules-cache.xsd http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
+http://www.w3.org/2001/XMLSchema-instance http://www.springmodules.org/schema/cache/springmodules-cache.xsd http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd ">
+
+	<!-- <session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:spring-context.xml,
+			classpath:spring-secsitive_word_time.xml,
+			classpath:memcache-context.xml
+		</param-value>
+	</context-param>
+	<context-param>
+		<description>HTTL模板引擎配置文件位置</description>
+		<param-name>httl.properties</param-name>
+		<param-value>classpath:httl.properties</param-value>
+	</context-param>
+	end context parameter
+	start listener
+	<listener>
+		<description>Spring IOC 配置加载</description>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+	</listener>
+	<filter>
+		<description>SpringMVC中的编码格式,强制为UTF-8 encoding设置编码格式，</description>
+		<description>forceEncoding设置是否理会 request.getCharacterEncoding()方法，设置为true则强制覆盖之前的编码格式。</description>
+		<filter-name>characterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>characterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> -->
+	
+	<servlet>
+		<description>測試</description>
+		<servlet-name>test</servlet-name>
+		<servlet-class>com.dhw.servlet.TestServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<!-- <welcome-file-list>
+		<welcome-file>login</welcome-file>
+	</welcome-file-list>
+ -->
+</web-app>

@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+.payDetailTable .comHeight {
+  height: 90px;
+  padding: 0;
+
+}
+
+.payDetailTable .all {
+  width: 10%;
+  height: 90px;
+  line-height: 90px;
+  background-color: ;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.payDetailTable .comLine {
+  padding-left: 10px;
+  line-height: 30px;
+  height: 30px;
+  background-color: ;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.payDetailTable .comStrongLine {
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  background-color: ;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}

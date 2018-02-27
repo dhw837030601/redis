@@ -1,0 +1,85 @@
+@charset "utf-8";
+*{padding:0;margin:0;}
+html{width:100%;height:auto;}
+body{background-color: #e7e8eb;width:100%;font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;margin:0;padding:0;}
+img{border:none;outline:none;}
+a{text-decoration:none;outline: none;}
+li{list-style:none;}
+input,select,option,button,textarea {outline:none;border:none;font-family:"微软雅黑";box-shadow:none;-webkit-appearance: none;}
+a:focus,input:focus,button:focus,textarea:focus,li:focus{outline:none;border:0;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.green{color: #31a56e;display: inline-block;}
+
+.kep_top{width:100%;}
+.kep_top .nav-wrapper-pc{height:96px;line-height:96px;background:#584f60;}
+.kep_top .nav-wrapper-pc .nav-inner{width:100%;max-width:750px;margin:0 auto;}
+.kep_top .nav-wrapper-pc .nav-inner .nav-logo{margin-left:15px;}
+.kep_top .nav-wrapper-pc .nav-inner .nav-logo a{display:block;margin-top:15px;}
+.kep_top .nav-wrapper-pc .nav-nav{margin-right:20px;}
+.kep_top .nav-wrapper-pc .nav-nav a{display:inline-block;color:#fff;font-size:14px;margin-left:40px;}
+.kep_top .nav-wrapper-phone{margin:0 auto;width:100%;background:#584f60;position:relative;display:none;}
+.kep_top .nav-wrapper-phone .phone-head{height:76px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding:20px 5.6%;position: relative;}
+.kep_top .nav-wrapper-phone .phone-head a{position: absolute;width: 80px;height:36px;left: 5.6%;display:block;}
+.kep_top .nav-wrapper-phone .phone-head a img{width:100%;height:auto;}
+.kep_top .nav-wrapper-phone .phone-head .act-tab{display: inline-block;width:20px;height:20px;margin-top:6px;}
+.kep_top .nav-wrapper-phone .phone-head .icon-menu{background:url(../images/1.png) no-repeat;background-size:100%;}
+.kep_top .nav-wrapper-phone .phone-head .icon-close{background:url(../images/2.png) no-repeat;background-size:100%;display:none;}
+.kep_top .nav-wrapper-phone .phone-tabs-wrap{display:none;position: absolute;width: 100%;top: 76px;left: 0;z-index: 10;}
+.kep_top .nav-wrapper-phone .phone-tabs-wrap a{display: block;height: 60px;line-height: 60px;background: #4d4654;font-size: 14px;text-align: center;color: #fff;border-bottom: 1px solid #584f60;}
+
+.video-mian{width:100%;max-width:750px;margin:0 auto;}
+.video-mian .prism-player{padding:0 28px;background:#000;box-sizing: border-box;margin:12px 0 0;border:1px solid red;}
+.video-mian .title{height: 48px;line-height: 48px;margin: 0 0 10px;overflow: hidden;background:#fff;padding:10px 28px;}
+.video-mian .title .update-time {color: #999;font-size: 14px;}
+.video-mian .title a.author-header{display:block;font-size:14px;}
+.video-mian .title a.author-header .avatar{width:48px;height:48px;border-radius: 50%;float:left;}
+.video-mian .title a.author-header .name{font-size: 16px;margin-left: 10px;color:#333;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;float:left;}
+.video-mian .likers-wrapper{padding: 16px 20px 2px 20px;background:#FFF;margin-bottom:12px;clear:both;}
+.video-mian .info{font-size:14px;color:#584f60;}
+.video-mian .info p{margin:10px 0;}
+.video-mian .info p i{display:inline-block;}
+.video-mian .likers img{width:48px;height:48px;border-radius: 50%;margin-left:10px;}
+
+
+/*评论*/
+.video-mian .comment-one{padding:28px;background:#fff;box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);box-sizing: border-box;}
+.video-mian .comment-one h3{padding-bottom: 15px;font-size:14px;}
+.video-mian .comment-one ul li{border-top: 1px solid #f5f5f5;padding: 15px 0;}
+.video-mian .comment-one ul li .comment-title{height: 14px;line-height: 14px;overflow: initial;margin-bottom:10px;}
+.video-mian .comment-one ul li .comment-title .comment-time{color:#999;font-size:13px;}
+.video-mian .comment-one ul li .comment-title a{font-size:13px;margin-right:0;display:block;}
+.video-mian .comment-one ul li .comment-title a img{width:36px;height:36px;float:left;border-radius:50%;}
+.video-mian .comment-one ul li .comment-title a .comment-name{color: #999;font-size: 13px;margin-left: 50px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.video-mian .comment-one ul li .comment-cont{font-size: 13px;line-height: 1.5;margin-left: 50px;}
+.video-mian .comment-one ul li .comment-cont .reply {background: #f5f5f5;color: #ccc;margin-bottom: 10px;padding: 10px;}
+.video-mian .comment-one ul li .comment-cont .reply span{color:#ccc;}
+.video-mian .comment-one ul li .comment-cont .reply span.green {color: #31a56e;display: inline-block;}
+.video-mian .comment-one .comment-more{border-top: 1px solid #f5f5f5;padding-top: 28px;position: relative;width: 100%;color: #999;font-size: 14px;text-align: center;display: block;text-decoration: none;}
+/*更多动态*/
+.video-mian .video-five{background:#fff;overflow:hidden;padding:28px;margin:12px 0;}
+.video-mian .video-five h3{font-size:14px;color:#333;padding:0 0 15px;border-bottom:1px solid #ececec;}
+.video-mian .video-five ul{width:106%;}
+.video-mian .video-five ul li a{display:block;width:30.5%;float: left;margin:2% 1.6% 0 0%;padding-bottom: 30.5%;background-color: #eeedeb;background-position: center center;background-repeat: no-repeat;background-size: cover;box-sizing: border-box;}
+.video-mian .video-five .more{font-size:14px;color:#999;padding-top:28px;text-align:center;display:block;}
+
+@media(max-width:750px){
+	.kep_top .nav-wrapper-pc{display:none;}
+	.kep_top .nav-wrapper-phone{display:block;}
+	.video-mian .title{padding:10px 15px;}
+	.video-mian .title a.author-header .avatar{width:36px;height:36px;margin-top:5px;}
+	.video-mian .title .update-time{font-size:12px;}
+	.video-mian .title a.author-header .name{font-size:14px;}
+	.video-mian .likers-wrapper{padding:15px 12px;} 
+	.video-mian .likers img{width:36px;height:36px;margin-left:5px;}
+	.video-mian .comment-one{padding:15px 12px;}
+	.video-mian .comment-one .comment-more{padding-top:15px;}
+	.video-mian .video-five{padding:15px 12px;}
+	.video-mian .video-five .more{padding-top:15px;}
+	.video-mian .prism-player {padding:0;}
+}
+@media(max-width:414px){
+	.video-mian .video-five ul li a{display:block;width:46%;float: left;margin:2% 2% 0 0%;padding-bottom: 46%;}
+}
